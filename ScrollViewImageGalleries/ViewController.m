@@ -36,7 +36,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:1080].active = YES;
     
     //    WIDTH
     [NSLayoutConstraint constraintWithItem:firstImage
@@ -45,7 +45,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:1920].active = YES;
     
     //    RIGHT EDGE
     [NSLayoutConstraint constraintWithItem:firstImage
@@ -54,7 +54,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeLeft
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:0].active = YES;
     
     //    TOP EDGE
     [NSLayoutConstraint constraintWithItem:firstImage
@@ -63,7 +63,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeTop
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:0].active = YES;
     
     UIImageView *secondImage = [[UIImageView alloc] initWithFrame:CGRectZero];
     secondImage.translatesAutoresizingMaskIntoConstraints = NO;
@@ -77,7 +77,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:1200].active = YES;
     
     //    WIDTH
     [NSLayoutConstraint constraintWithItem:secondImage
@@ -86,7 +86,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:1600].active = YES;
     
     //    RIGHT EDGE
     [NSLayoutConstraint constraintWithItem:secondImage
@@ -95,7 +95,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeLeft
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:0].active = YES;
     
     //    TOP EDGE
     [NSLayoutConstraint constraintWithItem:secondImage
@@ -104,7 +104,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeTop
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:1080].active = YES;
     
     UIImageView *thirdImage = [[UIImageView alloc] initWithFrame:CGRectZero];
     thirdImage.translatesAutoresizingMaskIntoConstraints = NO;
@@ -118,7 +118,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:900].active = YES;
     
     //    WIDTH
     [NSLayoutConstraint constraintWithItem:thirdImage
@@ -127,7 +127,7 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1
-                                  constant:100].active = YES;
+                                  constant:1800].active = YES;
     
     //    RIGHT EDGE
     [NSLayoutConstraint constraintWithItem:thirdImage
@@ -136,7 +136,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeLeft
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:0].active = YES;
     
     //    TOP EDGE
     [NSLayoutConstraint constraintWithItem:thirdImage
@@ -145,7 +145,7 @@
                                     toItem:self.imageScrollViewArea
                                  attribute:NSLayoutAttributeTop
                                 multiplier:1
-                                  constant:20].active = YES;
+                                  constant:2280].active = YES;
     
 //    n your view controller's -viewDidLoad method, create three UIImageView and place them inside the UIScrollView next to each other. Now would be a good time to consider your layout strategy: are you going to use explicit constraints, or set the frame and rely on translatesAutoresizingMaskIntoConstraints?
     // Do any additional setup after loading the view, typically from a nib.
