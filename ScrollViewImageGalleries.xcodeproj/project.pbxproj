@@ -14,6 +14,7 @@
 		F19BB71721225A3A0079B43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19BB71521225A3A0079B43F /* LaunchScreen.storyboard */; };
 		F19BB71A21225A3A0079B43F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F19BB71921225A3A0079B43F /* main.m */; };
 		F19BB72421225A3A0079B43F /* ScrollViewImageGalleriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F19BB72321225A3A0079B43F /* ScrollViewImageGalleriesTests.m */; };
+		F19BB7332122774E0079B43F /* ImageViewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19BB7322122774E0079B43F /* ImageViewDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F19BB71F21225A3A0079B43F /* ScrollViewImageGalleriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewImageGalleriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19BB72321225A3A0079B43F /* ScrollViewImageGalleriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewImageGalleriesTests.m; sourceTree = "<group>"; };
 		F19BB72521225A3A0079B43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19BB7312122774E0079B43F /* ImageViewDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewDetailController.h; sourceTree = "<group>"; };
+		F19BB7322122774E0079B43F /* ImageViewDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				F19BB70B21225A370079B43F /* AppDelegate.m */,
 				F19BB70D21225A370079B43F /* ViewController.h */,
 				F19BB70E21225A370079B43F /* ViewController.m */,
+				F19BB7312122774E0079B43F /* ImageViewDetailController.h */,
+				F19BB7322122774E0079B43F /* ImageViewDetailController.m */,
 				F19BB71021225A370079B43F /* Main.storyboard */,
 				F19BB71321225A3A0079B43F /* Assets.xcassets */,
 				F19BB71521225A3A0079B43F /* LaunchScreen.storyboard */,
@@ -206,6 +211,7 @@
 				F19BB70F21225A370079B43F /* ViewController.m in Sources */,
 				F19BB71A21225A3A0079B43F /* main.m in Sources */,
 				F19BB70C21225A370079B43F /* AppDelegate.m in Sources */,
+				F19BB7332122774E0079B43F /* ImageViewDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

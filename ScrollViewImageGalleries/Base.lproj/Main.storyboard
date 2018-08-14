@@ -39,5 +39,52 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Image View Detail Controller-->
+        <scene sceneID="Yzz-mh-xaX">
+            <objects>
+                <viewController id="pmI-lg-jrd" customClass="ImageViewDetailController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w1M-ob-3cX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="KQe-D2-aPb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse" translatesAutoresizingMaskIntoConstraints="NO" id="B4y-83-TTP" userLabel="Image Details">
+                                        <rect key="frame" x="0.0" y="0.0" width="900" height="1800"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B4y-83-TTP" secondAttribute="trailing" id="1Ld-OD-fsD"/>
+                                    <constraint firstItem="B4y-83-TTP" firstAttribute="top" secondItem="KQe-D2-aPb" secondAttribute="top" id="83k-f6-DRe"/>
+                                    <constraint firstAttribute="bottom" secondItem="B4y-83-TTP" secondAttribute="bottom" id="b2N-8d-bht"/>
+                                    <constraint firstItem="B4y-83-TTP" firstAttribute="leading" secondItem="KQe-D2-aPb" secondAttribute="leading" id="tRs-XR-dIt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="pmI-lg-jrd" id="7kU-7V-Jl0"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KQe-D2-aPb" firstAttribute="leading" secondItem="BRT-6j-FTt" secondAttribute="leading" id="E3p-mV-s7l"/>
+                            <constraint firstItem="BRT-6j-FTt" firstAttribute="bottom" secondItem="KQe-D2-aPb" secondAttribute="bottom" id="Gc7-kS-lSY"/>
+                            <constraint firstItem="BRT-6j-FTt" firstAttribute="top" secondItem="KQe-D2-aPb" secondAttribute="top" id="msr-Iv-DxG"/>
+                            <constraint firstItem="BRT-6j-FTt" firstAttribute="trailing" secondItem="KQe-D2-aPb" secondAttribute="trailing" id="owh-qL-W65"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BRT-6j-FTt"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageDetailViewArea" destination="KQe-D2-aPb" id="N52-qj-hKg"/>
+                        <outlet property="ImageDetails" destination="B4y-83-TTP" id="dTc-Ii-mTE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUK-Cl-wCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.60000000000002" y="837.93103448275872"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Lighthouse" width="900" height="1800"/>
+    </resources>
 </document>

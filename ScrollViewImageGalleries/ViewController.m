@@ -20,11 +20,8 @@
     self.imageScrollViewArea.delegate = self;
     
     // CRREATE THREE UI VIEWS
-    
-    // add them as subview to sroll view...?
-    
-    //  A red UIView at (20,20) x, y coordinates and with width 100 and height 100
-    UIImageView *firstImage = [[UIImageView alloc] initWithFrame:CGRectZero];
+
+    UIImageView *firstImage = [[UIImageView alloc]  initWithImage:[UIImage imageNamed:@"Lighthouse-in-Field"]];
     firstImage.translatesAutoresizingMaskIntoConstraints = NO;
     firstImage.backgroundColor = [UIColor orangeColor];
     [self.imageScrollViewArea addSubview:firstImage];
@@ -65,7 +62,7 @@
                                 multiplier:1
                                   constant:0].active = YES;
     
-    UIImageView *secondImage = [[UIImageView alloc] initWithFrame:CGRectZero];
+    UIImageView *secondImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Lighthouse-night"]];
     secondImage.translatesAutoresizingMaskIntoConstraints = NO;
     secondImage.backgroundColor = [UIColor orangeColor];
     [self.imageScrollViewArea addSubview:secondImage];
@@ -106,7 +103,7 @@
                                 multiplier:1
                                   constant:1080].active = YES;
     
-    UIImageView *thirdImage = [[UIImageView alloc] initWithFrame:CGRectZero];
+    UIImageView *thirdImage = [[UIImageView alloc]  initWithImage:[UIImage imageNamed:@"Lighthouse"]];
     thirdImage.translatesAutoresizingMaskIntoConstraints = NO;
     thirdImage.backgroundColor = [UIColor orangeColor];
     [self.imageScrollViewArea addSubview:thirdImage];
@@ -150,6 +147,8 @@
 //    n your view controller's -viewDidLoad method, create three UIImageView and place them inside the UIScrollView next to each other. Now would be a good time to consider your layout strategy: are you going to use explicit constraints, or set the frame and rely on translatesAutoresizingMaskIntoConstraints?
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 
 
