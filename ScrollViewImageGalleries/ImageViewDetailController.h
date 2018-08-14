@@ -10,6 +10,7 @@
 
 @interface ImageViewDetailController : UIViewController <UIScrollViewDelegate>
 
+- (void)setMyObjectHere:(UIImage *)image;
 
 
 @end

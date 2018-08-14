@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *ImageDetails;
 
+@property UIImage *currentImage;
+
 
 
 @end
@@ -23,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.ImageDetailViewArea.delegate = self; // always have to set this if using delegate pattern... (also adding the <part> to the .h file
+    self.ImageDetails.image = self.currentImage;
+
     // Do any additional setup after loading the view.
 }
 
@@ -36,14 +40,8 @@
     return self.ImageDetails;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setMyObjectHere:(UIImage *)image{
+    self.currentImage = image;
 }
-*/
 
 @end
